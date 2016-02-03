@@ -1,10 +1,12 @@
 from sikuli import *
+from _uimap import *
+from xmlrunner import *
 import HTMLTestRunner
 import math
 import os
 bdLibPath = os.path.abspath(sys.argv[0] + "..")
 if not bdLibPath in sys.path: sys.path.append(bdLibPath)
-from _uimap import *
+
 
 def RunBrowserToUrl(browser,toUrl):
     #TestAction("Start " +browser +" "+toUrl)

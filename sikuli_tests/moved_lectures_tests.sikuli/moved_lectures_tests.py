@@ -124,9 +124,10 @@ class MovedLecturesTests(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(MovedLecturesTests)
+    result = XMLTestRunner(file("testresults.xml", "w")).run(suite)
 
-    outfile = open("moved_lectures_tests_report.html", "w")
-    runner = HTMLTestRunner.HTMLTestRunner(stream=outfile, title='Moved Lectures Report' )
-    runner.run(suite)
-    outfile.close()
+    # outfile = open("moved_lectures_tests_report.html", "w")
+    # runner = HTMLTestRunner.HTMLTestRunner(stream=outfile, title='Moved Lectures Report' )
+    # runner.run(suite)
+    # outfile.close()
 

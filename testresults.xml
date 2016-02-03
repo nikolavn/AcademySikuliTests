@@ -1,0 +1,54 @@
+<testsuite errors="2" failures="2" name="unittest.suite.TestSuite" tests="10" time="315.384">
+  <testcase classname="__main__.MovedLecturesTests" name="test_001_AddLectureWithoutCourseAddsLectureForAllCourses" time="12.5750">
+    <error type="org.sikuli.script.FindFailed">FindFailed: can not find P(adminMenu.png) S: 0.87 in R[0,0 1920x1080]@S(0)
+  Line 2189, in file Region.java
+
+  File "C:\Sikuli\sikulix.jar\Lib\unittest\case.py", line 323, in run
+    self.setUp()
+  File "D:\Telerik Academy\Repos\AcademySikuliTests\sikuli_tests\moved_lectures_tests.sikuli\moved_lectures_tests.py", line 16, in setUp
+    NavigateToMovedLectures()
+  File "D:\Telerik Academy\Repos\AcademySikuliTests\sikuli_tests\_lib.sikuli\_lib.py", line 37, in NavigateToMovedLectures
+    wait(MainPage.adminMenu)
+  File "C:\Sikuli\sikulix.jar\Lib\sikuli\Region.py", line 55, in wait
+    return JRegion.wait(self, target)
+    </error>
+  </testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_002_AddLectureWithOutTrainingRoomLeavesTrainingRoomFieldBlank" time="13.0060">
+    <error type="org.sikuli.script.FindFailed">FindFailed: can not find P(adminMenu.png) S: 0.87 in R[0,0 1920x1080]@S(0)
+  Line 2189, in file Region.java
+
+  File "C:\Sikuli\sikulix.jar\Lib\unittest\case.py", line 323, in run
+    self.setUp()
+  File "D:\Telerik Academy\Repos\AcademySikuliTests\sikuli_tests\moved_lectures_tests.sikuli\moved_lectures_tests.py", line 16, in setUp
+    NavigateToMovedLectures()
+  File "D:\Telerik Academy\Repos\AcademySikuliTests\sikuli_tests\_lib.sikuli\_lib.py", line 37, in NavigateToMovedLectures
+    wait(MainPage.adminMenu)
+  File "C:\Sikuli\sikulix.jar\Lib\sikuli\Region.py", line 55, in wait
+    return JRegion.wait(self, target)
+    </error>
+  </testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_003_AddLectureWithValidDetailsCreatesNewEntry" time="34.3800"></testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_004_AddLectureWithEndDateBeforeCurrentDate" time="29.3630">
+    <failure type="exceptions.AssertionError">
+  File "C:\Sikuli\sikulix.jar\Lib\unittest\case.py", line 332, in run
+    testMethod()
+  File "D:\Telerik Academy\Repos\AcademySikuliTests\sikuli_tests\moved_lectures_tests.sikuli\moved_lectures_tests.py", line 50, in test_004_AddLectureWithEndDateBeforeCurrentDate
+    assert exists(MovedLectures.startDateValidationError)
+    </failure>
+  </testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_005_AddLectureWithSameDetailsMoreThanOnceDisplaysError" time="44.3010">
+    <failure type="exceptions.AssertionError">
+  File "C:\Sikuli\sikulix.jar\Lib\unittest\case.py", line 332, in run
+    testMethod()
+  File "D:\Telerik Academy\Repos\AcademySikuliTests\sikuli_tests\moved_lectures_tests.sikuli\moved_lectures_tests.py", line 58, in test_005_AddLectureWithSameDetailsMoreThanOnceDisplaysError
+    assert exists(MovedLectures.startDateValidationError)
+    </failure>
+  </testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_006_DeleteButtonRemovesTheRespectiveEntryFromTheList" time="30.1500"></testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_007_VerifyThatUpdatingAnEntryWithValidDetailsChangesTheCurrentDetails" time="31.0990"></testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_008_VerifyThatUpdatingAnEntryWithInvalidDetailsDoesntChangesTheCurrentDetails" time="36.7530"></testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_009_VerifyThatUpdatingAnEntryWithInvalidDetailsDoesntChangesTheCurrentDetails" time="39.4800"></testcase>
+  <testcase classname="__main__.MovedLecturesTests" name="test_010_VerifyThatClickingExportPDFCreatedPDFFileWithTheContentsOfTheGrid" time="44.2750"></testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
